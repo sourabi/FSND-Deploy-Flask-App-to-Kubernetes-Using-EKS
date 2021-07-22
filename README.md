@@ -72,6 +72,7 @@ aa9f31d276af04b86a580db30f142196-2078937600.us-east-2.elb.amazonaws.com
 export TOKEN=`curl --data '{"email":"<EMAIL-ID>","password":"<PASSWORD>"}' --header "Content-Type: application/json" -X POST <APP_URL>/auth  | jq -r '.token'`
 
 curl --request GET '<APP_URL>/contents' -H "Authorization: Bearer ${TOKEN}" | jq .
+```
 
 ## Authors
 Yours truly, Sourabi Kannan 
