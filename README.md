@@ -46,8 +46,13 @@ docker image ls
 docker run --name <container_name> --env-file=.env_file -p 80:8080 myimage
 docker ps
 ```
->_note_: localhost:8080 is the application url. Add JWT_SECRET in .env_file
+>_note_: localhost:8080 is the application url.
 
+Save the below content in .env_file 
+```bash
+JWT_SECRET='myjwtsecret'
+LOG_LEVEL=DEBUG
+```
 
 ### Clean up after use
 ```bash
